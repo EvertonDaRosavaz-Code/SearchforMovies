@@ -1,5 +1,5 @@
 const app = require('./app');
-const PORT = 4001 || 8081;
+const PORT = 5500
 
 app.listen(PORT, ()=>{
     console.log(`Servidor, porta ${PORT}`);

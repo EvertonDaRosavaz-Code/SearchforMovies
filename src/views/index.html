@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
-    <title>Document</title>
+    <title>Search for Movies</title>
 </head>
 <body>
-    <h2>Pagina principal</h2>
+
+
+    <!-- <form action="/upload" method="post">
+        <input type="text" name="message">
+        <input type="submit" value="Enviar ao back">
+    </form> -->
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileToUpload">
+        <input type="submit">
+    </form>
+
+  
+
+    <div id="status"></div>
+    <script src="/js/index.js"></script>
 </body>
 </html>
