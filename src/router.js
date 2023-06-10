@@ -12,9 +12,8 @@ const storage = multer.diskStorage({
     },
 
     filename: function(req, file, cb){
-        const ext = path.extname(file.originalname);
         const fileMovie = req.body.nameMovie
-        const nameMovie = fileMovie + ext
+        const nameMovie = fileMovie
         cb(null, nameMovie );
     }
 });
